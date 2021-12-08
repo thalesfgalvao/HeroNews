@@ -1,34 +1,35 @@
-import { css } from 'styled-components'
-import { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle, css } from 'styled-components'
 
 export const GlobalStyle = createGlobalStyle`
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    &::before,
-    &::after {
-      box-sizing: inherit;
-    }
-  }
   ${({ theme }) => css`
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
     html {
       font-size: 62.5%;
     }
     body {
-      font-family: ${theme.};
+      background-color: ${theme.colors.white};
+      font-family: ${theme.fonts.family.default};
       font-size: ${theme.fonts.sizes.medium};
-      background-color: ${theme.background.dark};
     }
+
     ol,
     li {
       list-style: none;
     }
+
     button {
-      mouse: pointer;
+      cursor: pointer;
+    }
+
+    a {
+      text-decoration: none;
     }
   `}
+
 `

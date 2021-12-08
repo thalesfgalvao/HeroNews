@@ -1,22 +1,43 @@
-export const theme = {
-  background: {
-    dark: '#0F0F26',
-    light: '#FFFFFF'
-  },
+export default {
   colors: {
-    successColor: '#6AE058',
-    warningColor: '#E09B35',
-    errorColor: '#E33F36',
+    default: '#1F1F1F',
+    xLightSuccess: '#d7f5e8',
+    lightSuccess: '#43cc8b',
+    success: '#6AE058',
+    darkSuccess: '#5ABF4B',
+    xLightWarning: '#91b8e5',
+    lightWarning: '#d28488',
+    warning: '#E09B35',
+    red: '#91030C',
+    error: '#AD030F',
     white: '#FFFFFF',
-    black: '#000000'
+    black: '#000000',
+    xlightBlue: '#deeafb',
+    lightBlue: '#91b8e5',
+    lightGrey: '#d3d6e0',
+    grey: '#B4B6BF',
+    darkGrey: '#7A7C82',
+    minWhite: '#F7F7F5'
   },
   fonts: {
     family: {
       default: "'Open Sans', sans-serif",
       secundary: "'Montserrat', sans-serif"
     },
+    weight: {
+      light: 300,
+      normal: 400,
+      medium: 500,
+      bold: 700
+    },
+    layers: {
+      base: 10,
+      overlay: 20,
+      onTop: 30
+    },
     sizes: {
-      xsmall: '0.8rem',
+      xxsmall: '0.8rem',
+      xsmall: '1.2rem',
       small: '1.6rem',
       medium: '2.4rem',
       large: '3.2rem',
@@ -24,9 +45,6 @@ export const theme = {
       xxlarge: '4.8rem',
       huge: '5.6rem',
       xhuge: '6.4rem'
-    },
-    screens: {
-      medium: '(max-width: 768px)'
     },
     spacings: {
       xsmall: '0.8rem',
@@ -37,6 +55,10 @@ export const theme = {
       xxlarge: '4.8rem',
       huge: '5.6rem',
       xhuge: '6.4rem'
+    },
+    transitions: {
+      default: '0.3s ease-in-out',
+      quick: '0.1s ease-in-out'
     }
   }
-}
+} as const

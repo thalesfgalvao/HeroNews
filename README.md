@@ -1,12 +1,31 @@
-# Getting Started with Create React App
+# Hero News
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was created using create react app with typescript.
 
-## Available Scripts
+## How install the project in your machine
 
-In the project directory, you can run:
+Open your Git bash or directory and paste code below
 
-### `npm start`
+#### `git clone https://github.com/smtcode/suzano-pipa-web.git`
+
+## Before you install in your machine
+
+You must install all packages that came with `package.json` using
+
+#### `yarn`
+
+## Create file and folder pattern
+
+Generate a tsx component following this project design pattern
+To create this design pattern use the code below
+
+### `yarn generate ComponentName`
+
+## To init project in your machine
+
+Open Visual Studio Code and press `Ctrl + '` to open terminal and use
+
+### `npm start` or `yarn start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
@@ -44,3 +63,7 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+## WARNING
+
+Always check your branch before push your changes.
