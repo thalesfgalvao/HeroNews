@@ -6,6 +6,7 @@ import { SignInSchema } from '../../schemas/SignIn'
 import { Button } from '../../components/Button'
 import { Link } from 'react-router-dom'
 import InputPassword from '../../components/InputPassword'
+import { Card } from '../../components/Card'
 
 const Login = () => {
   const [validateOnChange, setValidateOnChange] = useState(false)
@@ -29,7 +30,7 @@ const Login = () => {
   return (
     <S.Wrapper>
       <S.AnimationContainer>
-        <S.LoginCard>
+        <Card>
           <S.TitleLogin>Login</S.TitleLogin>
           <S.FormLogin
             onSubmitCapture={() => {
@@ -64,7 +65,7 @@ const Login = () => {
           <S.CopyrightWrapper>
             <S.LoginPageText>&reg; Hero News</S.LoginPageText>
           </S.CopyrightWrapper>
-        </S.LoginCard>
+        </Card>
       </S.AnimationContainer>
     </S.Wrapper>
   )
