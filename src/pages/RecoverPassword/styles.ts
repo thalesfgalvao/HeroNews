@@ -43,6 +43,7 @@ export const Card = styled(AntdCard)`
 export const Title = styled.h1`
   ${({ theme }) => css`
     font-size: ${theme.fonts.sizes.medium};
+    text-align: center;
   `}
 `
 export const Form = styled(AntdForm)``

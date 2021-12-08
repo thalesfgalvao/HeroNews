@@ -1,24 +1,25 @@
 import styled, { css, DefaultTheme } from 'styled-components'
 import { Button as AntdButton } from 'antd'
 import { IButtonProps } from '.'
+import { shade } from 'polished'
 
 const wrapperModifiers = {
   primary: (theme: DefaultTheme) => css`
     background: ${theme.colors.darkSuccess};
     &:hover {
-      background: ${theme.colors.success};
+      ${shade(0.2, theme.colors.darkSuccess)};
     }
   `,
   grey: (theme: DefaultTheme) => css`
     background: ${theme.colors.grey};
     &:hover {
-      background: ${theme.colors.lightGrey};
+      background: ${shade(0.2, theme.colors.grey)};
     }
   `,
   redDefault: (theme: DefaultTheme) => css`
     background: ${theme.colors.red};
     &:hover {
-      background: ${theme.colors.error};
+      background: ${shade(0.2, theme.colors.red)};
     }
   `
 }
